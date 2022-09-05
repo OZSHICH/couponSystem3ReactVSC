@@ -1,0 +1,13 @@
+.CustomLink {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-decoration: none;
+  margin: 15px;
+}
+
+.CustomLink .active {
+  color: rgb(31, 31, 31);
+  font-weight: 700;
+  font-size: xx-large;
+  text-decoration: underline;
+}

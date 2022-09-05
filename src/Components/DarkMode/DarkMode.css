@@ -1,0 +1,108 @@
+:root {
+  --music-button-color: #3f51b5;
+  --font-color: #3f51b5;
+  --background-color: rgb(235, 235, 235);
+  --box-background-color: rgb(235, 235, 235);
+  --input-background-color: white;
+  --link-color: cornflowerblue;
+  --head-background-color: #3f51b5;
+  --footer-background-color: #3f51b5;
+  --card-back-background-color: #3f51b5;
+  --details-item-border: 2px solid #3f51b5;
+  --shadow-box-title-text: #3f51b5;
+  --box-shadow: 0px 0px 10px 10px #3f51b5;
+  --img-box-shadow: 0px 0px 10px 10px #3f51b5;
+  --p-color: black;
+}
+
+[data-theme="dark"] {
+  --font-color: #eee;
+  --background-color: #333;
+  --box-background-color: #505050;
+  --link-color: lightblue;
+  --head-background-color: #505050;
+  --footer-background-color: #505050;
+  --card-back-background-color: #505050;
+  --details-item-border: 2px solid #202020;
+  --shadow-box-title-text: #eee;
+  --img-box-shadow: 0px 0px 10px 10px #202020;
+  --box-shadow: 0px 0px 10px 10px #202020;
+  --p-color: #eee;
+  --input-background-color: rgb(200, 200, 200);
+  --music-button-color: #505050;
+}
+
+/* Header {
+  background-color: var(--background-color);
+  --background-color: #3f51b5;
+} */
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+.toggle-theme-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.toggle-theme-wrapper span {
+  font-size: 28px;
+}
+
+.toggle-theme {
+  position: relative;
+  display: inline-block;
+  height: 34px;
+  width: 60px;
+}
+
+.toggle-theme input {
+  display: none;
+}
+
+.slider {
+  background-color: rgb(80, 135, 236);
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.2s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  background-color: rgb(85, 85, 85);
+}
+
+input:checked + .slider {
+  background-color: rgb(50, 50, 50);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

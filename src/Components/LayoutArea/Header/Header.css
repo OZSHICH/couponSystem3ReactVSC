@@ -1,0 +1,16 @@
+.Header {
+  /* background-color: #3f51b5; */
+  background-color: var(--head-background-color);
+  color: rgb(250, 250, 250);
+  /* border: 2px solid gray; */
+  grid-column: 12 span;
+  grid-row: 1 span;
+  padding-right: 1%;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.4), 0 6px 10px 0 rgba(0, 0, 0, 0.25),
+    0 1px 18px 0 rgba(0, 0, 0, 0.2);
+  /* background-color: white; */
+  display: flex;
+  align-items: center;
+
+  /* max-height: 80px; */
+}
